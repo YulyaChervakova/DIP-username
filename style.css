@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  height: 100%;
+}
+body {
+    background: #EF629F;
+    background: linear-gradient(to right, #EF629F, #EECDA3);
+    font-family: Avenir, 'Proxima Nova', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+header {
+  position: fixed;
+  /*  position: fixed;*/
+    background-color: rgb(87, 87, 87);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Gloria Hallelujah', cursive;
+    z-index:1;
+   
+   
+}
+.headingApp{
+  font-size: 70px;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  color:rgb(114, 114, 114);
+}
+
+.hed {
+
+    display: flex;
+    display: inline-block;
+    padding: 20px 20px;
+    margin-left: 20px;
+    text-align: center;
+    
+}
+
+.heading {
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+}
+
+.text {
+    color: rgb(0, 0, 0);
+}
+a{
+  text-decoration: none;
+}
+#navbar {
+    display: flex;
+    margin-right: 40px;
+}
+
+ul.nav li {
+    display: inline-block;
+    /* Отображать как строчный элемент */
+    text-align: center;
+
+}
+
+ul.nav .active a{
+    color: rgb(129, 129, 129);
+}
+
+.nav a{
+
+    display: block;
+    /* ссылка растягивается на весь пункт li */
+
+    padding: 20px 20px;
+    /* задаем внутренние отступы */
+
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   padding-top: 70px;
+    margin-bottom: 60px;
+}
+
+
+footer {
+    background-color: rgb(87, 87, 87);
+
+    position: fixed;
+    /* Фиксированное положение */
+    left: 0;
+    bottom: 0;
+    /* Левый нижний угол */
+    padding: 10px;
+    /* Поля вокруг текста */
+   
+    color: rgb(146, 142, 142);
+    /* Цвет текста */
+    width: 100%;
+    /* Ширина слоя */
+    font-family: 'Gloria Hallelujah', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.foot{
+  padding-right: 30px;
+}
+/*Слайдер jQueru*/
+
+  
+  .slider {
+    max-width: 700px;
+    max-height: 600px;
+    
+  }
+  
+  .slider__images {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    top: 0px;
+    left: 70px;
+    list-style-type: none;
+    transition: opacity .4s ease-in, visibility .4s ease-in;
+    
+  }
+  .slider__images.loaded {
+    opacity: 1;
+    visibility: visible;
+  
+  }
+  .slider__images-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .no-js .slider__images-item:first-of-type {
+    position: relative;
+    
+    
+  }
+  .no-js .slider__images-item:not(:first-of-type) {
+    display: none !important;
+  }
+  .slider__images-image {
+    display: block;
+   
+
+  }
+  
+  .slider__controls {
+    margin-top: 30px;
+    user-select: none;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+  }
+  
+  .slider__control {
+    display: inline-block;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .slider__control--prev {
+    margin-right: 10px;
+  }
+  
+  .slider__control--next {
+    margin-left: 10px;
+  }
+  
+  .slider__pagers {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .slider__pagers li {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0 10px;
+  }
+  .slider__pagers li.active {
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  ul,ol,div {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    border-radius:15px;
+    max-width: 50%;
+    max-height: 50%;
+   
+  }
+
+  .wrapper {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .slider {
+    margin: 30px auto 0;
+    padding: 30px;
+   
+
+   
+  }
+  .stop{
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    color:rgb(46, 46, 46);
+    font-size: 1.5em;
+  }
